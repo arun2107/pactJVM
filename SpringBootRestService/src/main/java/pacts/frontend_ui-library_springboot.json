@@ -1,0 +1,43 @@
+{
+  "consumer": {
+    "name": "Frontend UI"
+  },
+  "provider": {
+    "name": "Library SpringBoot"
+  },
+  "interactions": [
+    {
+      "description": "a request to GET a Book",
+      "request": {
+        "method": "GET",
+        "path": "/getBooks"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": [
+          {
+            "book_name": "RobotFramework",
+            "id": "2423dd225298957",
+            "isbn": "2423dd2",
+            "aisle": 25298957,
+            "author": "shetty"
+          },
+          {
+            "book_name": "Contract Testing",
+            "id": "2487dd28957",
+            "isbn": "2487dd2",
+            "aisle": 8957,
+            "author": "shetty"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

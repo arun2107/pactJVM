@@ -1,0 +1,31 @@
+Install MySQL Server and run the below
+
+Start the server - sudo /usr/local/mysql/bin/mysqld_safe --user=mysql
+
+CREATE DATABASE APIDevelopSpringBoot;
+
+use APIDevelopSpringBoot;
+
+CREATE TABLE Storage2(book_name varchar(50),id varchar(50),
+
+isbn varchar(50),
+
+aisle varchar(50),
+
+author varchar(50),PRIMARY KEY (id));
+
+INSERT INTO Storage2(book_name,id,isbn,aisle,author) values("Microservices","hrtge43","hrtge","43","Shetty");
+INSERT INTO Storage2(book_name,id,isbn,aisle,author) values("Selenium","khuys21","khuys","21","Shetty");
+INSERT INTO Storage2(book_name,id,isbn,aisle,author) values("Appium","ttefs36","ttefs","36","Shetty");
+
+select * from Storage2;
+
+
+Kick off the consumer by running SpringBootRestServiceApplication
+
+Kick off the provider by running CoursesApplication
+
+
+PactMyConsumerTest for creating a contract for the /allCourseDetails endpoints
+
+pactMyProviderTest for verifying the contract with the provider
